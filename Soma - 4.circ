@@ -64,9 +64,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
       <rect fill="#ffb142" height="110" stroke="#000000" stroke-width="2" width="81" x="50" y="50"/>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="84" y="135">Soma - 4</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="136">ADD_4</text>
       <circ-port height="8" pin="120,70" width="8" x="66" y="46"/>
-      <circ-port height="10" pin="110,210" width="10" x="45" y="115"/>
+      <circ-port height="10" pin="110,210" width="10" x="45" y="95"/>
       <circ-port height="8" pin="650,50" width="8" x="106" y="46"/>
       <circ-port height="10" pin="510,430" width="10" x="85" y="155"/>
       <circ-anchor facing="east" height="6" width="6" x="97" y="147"/>
@@ -110,43 +110,43 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(370,340)" to="(370,400)"/>
     <wire from="(380,340)" to="(380,400)"/>
     <wire from="(430,40)" to="(430,160)"/>
+    <comp lib="0" loc="(660,230)" name="Ground"/>
+    <comp lib="7" loc="(310,200)" name="Soma - 1"/>
     <comp lib="7" loc="(570,200)" name="Soma - 1"/>
-    <comp lib="7" loc="(440,200)" name="Soma - 1"/>
+    <comp lib="7" loc="(190,200)" name="Soma - 1"/>
+    <comp lib="0" loc="(110,210)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(400,420)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
     <comp lib="0" loc="(630,50)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
-    <comp lib="0" loc="(660,230)" name="Ground"/>
     <comp lib="0" loc="(120,70)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="0" loc="(110,210)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="7" loc="(190,200)" name="Soma - 1"/>
-    <comp lib="0" loc="(650,50)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="7" loc="(310,200)" name="Soma - 1"/>
     <comp lib="0" loc="(510,430)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="4"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(140,70)" name="Splitter">
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
+    <comp lib="7" loc="(440,200)" name="Soma - 1"/>
+    <comp lib="0" loc="(650,50)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
     </comp>
-    <comp lib="0" loc="(400,420)" name="Splitter">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(140,70)" name="Splitter">
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
@@ -162,9 +162,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(410,120)" to="(410,180)"/>
     <wire from="(390,340)" to="(390,430)"/>
     <wire from="(260,250)" to="(330,250)"/>
-    <comp lib="0" loc="(260,110)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
+    <comp lib="0" loc="(260,250)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(390,430)" name="Pin">
       <a name="facing" val="north"/>
@@ -172,15 +172,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="4"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp loc="(380,280)" name="Soma - 4"/>
     <comp lib="0" loc="(590,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(260,250)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(260,110)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
     </comp>
+    <comp loc="(380,280)" name="Soma - 4"/>
   </circuit>
 </project>
